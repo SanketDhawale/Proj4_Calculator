@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <link rel="stylesheet" href="proj4.css">
+    
+</head>
+<body>
+    <div id="calculator">
+       <h4 id="head">calc</h4>
+       <div id="display-container">
+           <div id="display">0</div>
+       </div>
+       <div class="row">
+           <button class="btn" onclick="appendNumber(7)">7</button>
+           <button class="btn" onclick="appendNumber(8)">8</button>
+           <button class="btn" onclick="appendNumber(9)">9</button>
+           <button class="btn" id="delb" onclick="deleteLast()">Del</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="appendNumber(4)">4</button>
+            <button class="btn" onclick="appendNumber(5)">5</button>
+            <button class="btn" onclick="appendNumber(6)">6</button>
+            <button class="btn" onclick="setOperator('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="appendNumber(1)">1</button>
+            <button class="btn" onclick="appendNumber(2)">2</button>
+            <button class="btn" onclick="appendNumber(3)">3</button>
+            <button class="btn" onclick="setOperator('-')">-</button>
+        </div>
+          <div class="row">
+            <button class="btn" onclick="appendNumber('.')">.</button>
+            <button class="btn" onclick="appendNumber(0)">0</button>
+            <button class="btn" onclick="setOperator('*')">x</button>
+            <button class="btn" onclick="setOperator('/')">/</button>
+        </div>
+        <div class="row">
+            <button class="btn"  id="resetb" onclick="clearDisplay()">Reset</button>
+            <button class="btn"  id="equalb" onclick="calculate()">=</button>
+        </div>
+        
+        <script src="proj4.js"></script>
+           
+    </div>
+</body>
+</html>
